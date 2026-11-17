@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paraules amb dibuixos</title>
+  <meta name="description" content="Joc de lletres en català amb dibuixos i quatre nivells.">
+  <link rel="stylesheet" href="./web-assets/styles.css">
+  <script type="module" src="./web-assets/game.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Paraules amb dibuixos</h1>
+    <div class="game">
+      <noscript>Activa JavaScript per jugar.</noscript>
+      <section id="setup" aria-labelledby="choose">
+        <h2 id="choose" tabindex="-1">Tria un nivell</h2>
+        <p>Mira el dibuix i escriu les lletres que falten. Cada partida té 8 paraules.</p>
+        <div class="levels">
+          <button type="button" data-level="1"><strong>Nivell 1</strong> <span aria-hidden="true">·</span> Una o dues vocals</button>
+          <button type="button" data-level="2"><strong>Nivell 2</strong> <span aria-hidden="true">·</span> Una vocal i una consonant</button>
+          <button type="button" data-level="3"><strong>Nivell 3</strong> <span aria-hidden="true">·</span> Només es veu la primera lletra</button>
+          <button type="button" data-level="4"><strong>Nivell 4</strong> <span aria-hidden="true">·</span> Escriu tota la paraula</button>
+        </div>
+      </section>
+      <section id="round" aria-label="Partida" hidden>
+        <div class="game-bar">
+          <strong id="progress" aria-live="polite"></strong>
+          <div>
+            <button type="button" id="retry">Torna-ho a provar</button>
+            <button type="button" id="change">Canvia de nivell</button>
+          </div>
+        </div>
+        <div id="game-picture" class="game-picture" role="img" aria-label="Dibuix de la paraula"></div>
+        <div id="letters" role="group" aria-label="Lletres de la paraula"></div>
+        <div id="celebration" role="status">
+          <span id="applause" aria-hidden="true"></span>
+          <span id="feedback"></span>
+        </div>
+        <div id="keyboard" role="group" aria-label="Teclat"></div>
+      </section>
+      <section id="finish" aria-labelledby="finished" hidden>
+        <h2 id="finished" tabindex="-1">Molt bé! Has completat 8 paraules!</h2>
+        <div id="stars" aria-hidden="true"></div>
+        <p id="score"></p>
+        <div class="result-actions">
+          <button type="button" id="again" class="primary">↻ Torna a jugar</button>
+          <button type="button" id="levels" class="primary">Tria un nivell</button>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
