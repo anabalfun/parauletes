@@ -1,6 +1,11 @@
 # Parauletes
 
-A small Catalan word game for beginning readers. Choose one of four levels, fill in the missing letters, and complete an eight-word round.
+Parauletes is a simple Catalan word game for children aged 4–6. It helps them explore words and take early steps toward reading. It’s designed for short, occasional play: clear activities, minimal animation, and no features that encourage children to keep playing longer than they intend. 
+Choose one of four levels, fill in the missing letters, and complete an eight-word round.
+Level 1: Fill in one or two missing vowels.
+Level 2: Fill in one missing vowel and one missing consonant.
+Level 3: The first letter is shown and you need to fill in the rest of the word.
+Level 4: All letters are hidden and you need to write the whole word.
 
 ## Play locally
 
